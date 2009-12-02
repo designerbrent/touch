@@ -1,0 +1,39 @@
+; $Id: $
+name = Touch
+description = Drupal base theme built with Blueprint CSS framework.
+
+core = 6.x
+engine = phptemplate
+stylesheets[all][] = css/typography.css
+stylesheets[all][] = css/touch.css
+stylesheets[all][] = css/style.css
+
+
+scripts[] = scripts/general.js
+
+regions[blocks] = Blocks
+regions[content] = Content
+regions[header] = Header
+regions[footer] = Footer
+
+
+; What features to include:
+
+features[] = logo
+features[] = name
+features[] = slogan
+features[] = mission
+features[] = node_user_picture
+features[] = comment_user_picture
+features[] = search
+features[] = favicon
+features[] = primary_links
+# features[] = secondary_links
+
+
+; What CSS files to exclude:
+stylesheets[all][] = system.css
+
+stylesheets[all][] = /modules/system/system-menus.css
+stylesheets[all][] = system-menus.css
+
